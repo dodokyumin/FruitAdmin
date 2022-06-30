@@ -6,7 +6,7 @@
 <%@page import="kr.ac.kopo.ctc.kopo444.domain.StockItem"%>
 <%@page import="kr.ac.kopo.ctc.kopo444.service.Pagination"%>
 <%@page import="java.util.List, java.util.Enumeration,com.oreilly.servlet.multipart.DefaultFileRenamePolicy, com.oreilly.servlet.MultipartRequest"%>
-	
+<%@page errorPage="duplicateIdError.jsp"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,8 +40,6 @@
 	strStockNum = multi.getParameter("newStockNum");
 	strContent = multi.getParameter("newContent");
 	
-	
-	
 	StockItemService stockItemService = new StockItemServiceImpl();
 	Boolean result = stockItemService.stockItemCreateOne(strName, strStockNum, strContent, strId, fileName);
 	ServletContext context = getServletContext();
@@ -53,7 +51,7 @@
 			window.location.href = "index.jsp";
 		}
 	} else {
-		window.confirm("게시글이 등록 실패.")
+		window.confirm("게시글 등록 실패.")
 	}
 	
 	</script>

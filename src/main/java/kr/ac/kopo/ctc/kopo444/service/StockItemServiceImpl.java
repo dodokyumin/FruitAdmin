@@ -15,7 +15,8 @@ public class StockItemServiceImpl implements StockItemService{
 	private int countPerPage = 10;
 	final int COUNT_PER_PAGE = 10;
 	final int PAGE_SIZE = 10;
-
+	final static String IMAGE_PATH = "assets/";
+	
 	@Override
 	public List<StockItem> readAll(String strcPage) {
 		// 총 레코드 수 조회

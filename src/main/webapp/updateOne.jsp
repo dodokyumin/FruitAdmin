@@ -55,7 +55,7 @@
 			</tr>
 			<tr>
 				<td width=100px>이미지 첨부</td>
-				<td><textarea style="width: 500px; height: 300px;" readonly>이미지 들어갈 곳.</textarea></td>
+				<td><img width="400" src="assets/${stockItem.fileName}"></td>
 			</tr>
 		</table>
 		<table cellspacing=1 width=400 border=0>

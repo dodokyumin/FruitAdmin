@@ -25,17 +25,17 @@
 		<table cellspacing=1 width=600 border=1>
 			<tr>
 				<td width=100px>상품 번호</td>
-				<td><input type="text" name="newId" placeholder="상품 번호를 입력하세요."></td>
+				<td><input type="text" name="newId" maxlength='5' pattern='^[0-9]+$' placeholder="상품 번호를 입력하세요."></td>
 			</tr>
 			<tr>
 				<td width=100px>상품명</td>
-				<td><input type="text" placeholder="상품명을 입력하세요." name="newName"
+				<td><input type="text" placeholder="상품명을 입력하세요." maxlength='20' name="newName"
 					pattern='^[가-힣a-zA-Z\s?~!@#$%^&*()/]+$' required></td>
 			</tr>
 			<tr>
 				<td width=100px>재고 현황</td>
 				<td><input type="text" name="newStockNum"
-					placeholder="재고를 입력하세요" pattern='^[0-9]+$'></td>
+					placeholder="재고를 입력하세요" pattern='^[0-9]+$' maxlength='5'></td>
 			</tr>
 			<tr>
 				<td width=100px>상품 등록일</td>

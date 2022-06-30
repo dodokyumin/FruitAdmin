@@ -10,7 +10,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>재고 확인</title>
 </head>
 <body>
 	<%
@@ -51,7 +51,7 @@
 		</tr>
 		<tr>
 			<td width=100px>상품사진</td>
-			<td></td>
+			<td><img width="400" src="assets/${stockItem.fileName}"></td>
 		</tr>
 	</table>
 	<c:if test="${stockItem.id != 0}">

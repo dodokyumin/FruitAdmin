@@ -62,6 +62,7 @@ public class StockItemDaoImpl implements StockItemDao {
 					String curDate = rs.getString("curDate");
 					String regDate = rs.getString("regDate");
 					String content = rs.getString("content");
+					String fileName = rs.getString("fileName");
 
 					stockItem.setId(id);
 					stockItem.setName(name);
@@ -69,6 +70,7 @@ public class StockItemDaoImpl implements StockItemDao {
 					stockItem.setCurDate(curDate);
 					stockItem.setRegDate(regDate);
 					stockItem.setContent(content);
+					stockItem.setFileName(fileName);
 			}
 			
 		} catch (SQLException e) {
