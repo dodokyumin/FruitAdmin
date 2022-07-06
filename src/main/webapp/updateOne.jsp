@@ -71,7 +71,6 @@
 			</tr>
 		</table>
 	</form>
-	<p align="center">
 		<input type="submit" value="삭제"
 			onclick="location.href='deleteOne.jsp?id=${stockItem.id}'">
 </body>

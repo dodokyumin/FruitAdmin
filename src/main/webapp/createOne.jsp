@@ -30,7 +30,7 @@
 			<tr>
 				<td width=100px>상품명</td>
 				<td><input type="text" placeholder="상품명을 입력하세요." maxlength='20' name="newName"
-					pattern='^[가-힣a-zA-Z\s?~!@#$%^&*()/]+$' required></td>
+					pattern='^[가-힣a-zA-Z0-9\s?~!@#$%^&*()/ -]+$' required></td>
 			</tr>
 			<tr>
 				<td width=100px>재고 현황</td>
@@ -50,7 +50,7 @@
 				<td><input type="text" name="newContent"
 					placeholder="상품 설명을 입력하세요."
 					pattern='^[가-힣a-zA-Z0-9\s?~!@#$%^&*()/]+$' required>
-				</textarea></td>
+				</td>
 			</tr>
 			<tr>
 				<td width=100px>이미지 첨부</td>

@@ -54,11 +54,10 @@
 		</c:forEach>
 	</table>
 	<div>
-		<p align="center">
 			<input type="button" value="신규"
 				onclick="location.href='createOne.jsp'"> <input
-				type="button" value="초기화" onclick="location.href='deleteAll.jsp'">
-		</p>
+				type="button" value="초기화" onclick="location.href='deleteAll.jsp'"><br>
+
 
 		<c:if test="${rowCount != 0}">
 			<c:if test="${pagination.ppPage != 0 && pagination.pPage != 0}">
